@@ -1,0 +1,319 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f7f7f7;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Global reset end */
+
+:root {
+  --text-color: #4d4f62;
+  --card1-color: #44d3d2;
+  --card2-color: #ea5454;
+  --card3-color: #fcae4a;
+  --card4-color: #549ef2;
+}
+
+body {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/*header start*/
+
+header {
+  width: 33.75rem;
+  height: 10.5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-Box {
+  width: 27.75re;
+  height: 6.375re;
+}
+
+.title-h1 {
+  width: 27.625rem;
+  height: 3.375rem;
+  font-size: 2.25rem;
+  color: var(--text-color);
+  font-weight: 200;
+}
+
+.title-P-tag {
+  width: 27.625rem;
+  height: 3.375rem;
+  font-size: 2.25rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.titles-Description {
+  width: 33.75rem;
+  height: 3.125rem;
+  font-size: 0.938rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/*header end*/
+
+/*main start*/
+
+main {
+  width: 1110px;
+  height: 530px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 {
+  height: 530px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 250px;
+  border-radius: 6px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+.card-color1 {
+  border-top: 5px solid var(--card1-color);
+}
+.card-color2 {
+  border-top: 5px solid var(--card2-color);
+}
+.card-color3 {
+  border-top: 5px solid var(--card3-color);
+}
+.card-color4 {
+  border-top: 5px solid var(--card4-color);
+}
+
+.card h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 32px 0px 6px 32px;
+  color: var(--text-color);
+}
+
+.card p {
+  width: 286px;
+  height: 46px;
+  margin-left: 32px;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card-img {
+  width: 64px;
+  height: 64px;
+  margin: 40px 32px 32px 254px;
+}
+
+/*main end*/
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin-top: 76px;
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 25px;
+  }
+  .box2 {
+    height: 520px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header {
+    width: 311px;
+    height: 161px;
+  }
+  .title-Box {
+    width: 297px;
+    height: 70px;
+  }
+  .title-h1 {
+    width: 297px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .title-P-tag {
+    width: 297px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .titles-Description {
+    width: 311px;
+    height: 75px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
