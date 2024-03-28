@@ -296,6 +296,7 @@ main {
   }
   main {
     width: 300px;
+    justify-content: none;
   }
   .title-Box {
     width: 297px;
